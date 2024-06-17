@@ -1,0 +1,11 @@
+
+i
+java:S1192J"GDefine a constant instead of duplicating this literal "Error:" 3 times.(ü°õšüÿÿÿÿ8¼’óÁ‚2
+j
+java:S1192/"HDefine a constant instead of duplicating this literal "Error: " 3 times.(ü°õšüÿÿÿÿ8½’óÁ‚2
+
+java:S1488ˆ"\Immediately return this expression instead of assigning it to the temporary variable "depp".(‡¸ßÍùÿÿÿÿ8¿’óÁ‚2
+[
+java:S3516|"9Refactor this method to not always return the same value.(æÜÜÄúÿÿÿÿ8Ù’óÁ‚2
+L
+java:S2695"/This "PreparedStatement" only has 1 parameters.(¤²ò¬8â’óÁ‚2

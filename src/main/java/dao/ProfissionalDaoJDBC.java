@@ -9,7 +9,7 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ProfissionalDaoJDBC implements  ProfissionalDao{
+public class ProfissionalDaoJDBC implements ProfissionalDao {
         private Connection conn;
 
         public ProfissionalDaoJDBC(Connection conn) {
@@ -21,7 +21,7 @@ public class ProfissionalDaoJDBC implements  ProfissionalDao{
             PreparedStatement st = null;
 
             try {
-                st = conn.prepareStatement("Insert Into Profissional "
+                st = conn.prepareStatement("Insert Into profissional "
                         +"(Name) "
                         +"(CPF)"
                         +("ativo")
@@ -58,7 +58,7 @@ public class ProfissionalDaoJDBC implements  ProfissionalDao{
             PreparedStatement st = null;
 
             try {
-                st = conn.prepareStatement("Update Profissional "
+                st = conn.prepareStatement("Update profissional "
                         +"Set name = ? "
                         +"Set cpf = ?"
                         +"Where Id = ?");
@@ -83,7 +83,7 @@ public class ProfissionalDaoJDBC implements  ProfissionalDao{
             PreparedStatement st = null;
 
             try {
-                st = conn.prepareStatement("DELETE  FROM Profissional WHERE Id = ?");
+                st = conn.prepareStatement("DELETE  FROM profissional WHERE Id = ?");
 
                 st.setInt(1, id);
 
@@ -102,7 +102,7 @@ public class ProfissionalDaoJDBC implements  ProfissionalDao{
         PreparedStatement st = null;
 
         try {
-            st = conn.prepareStatement("Update Profissional "
+            st = conn.prepareStatement("Update profissional "
                     +"Set ativo = ? "
                     +"Where Id = ?");
 
@@ -126,7 +126,7 @@ public class ProfissionalDaoJDBC implements  ProfissionalDao{
             PreparedStatement st = null;
             ResultSet rs = null;
             try {
-                st = conn.prepareStatement("Select * From Profissional Where Id = ?");
+                st = conn.prepareStatement("Select * From profissional Where Id = ?");
 
                 st.setInt(1, id);
 
@@ -152,7 +152,7 @@ public class ProfissionalDaoJDBC implements  ProfissionalDao{
             ResultSet rs = null;
             List<Profissional> list = new ArrayList<>();
             try {
-                st = conn.prepareStatement("SELECT * FROM Profissional ORDER BY Name");
+                st = conn.prepareStatement("SELECT * FROM profissional ORDER BY Name");
                 rs = st.executeQuery();
 
                 while (rs.next()) {

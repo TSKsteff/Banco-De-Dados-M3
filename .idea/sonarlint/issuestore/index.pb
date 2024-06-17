@@ -24,3 +24,13 @@ Z
 *src/main/java/dao/ProfissionalDaoJDBC.java,0\7\071a916029f5ee537772eac8ab371a2f5e2496c9
 X
 (src/main/java/entities/Profissional.java,e\2\e21e89a8611796e9b4741e4e8e6e22e4bc6c304b
+U
+%src/main/java/entities/Pacientes.java,7\2\72b04186af31426c1b3ba2d5e792bf43dd53d157
+X
+(src/main/java/dao/impl/PacientesDao.java,9\a\9a285564b0bb29a4d8622243273cf7ea83e3c536
+W
+'src/main/java/dao/PacientesDaoJDBC.java,d\2\d2d03c9c7ebe516c8e6c6cc20c5a3a3d366bd1bd
+_
+/src/main/java/dao/impl/ProfissionalDaoJDBC.java,a\3\a3a28b8ca1d91a47c88ae3622475f18844b9d800
+V
+&src/main/java/dao/ProfissionalDao.java,0\2\02fe99cb29e6dc4dca51476645c4f12fab677517

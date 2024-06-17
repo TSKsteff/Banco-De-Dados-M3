@@ -21,6 +21,13 @@ public class Main {
                     "ativo BOOLEAN NOT NULL" +
                     ")";
 
+            String createPacienteTable = "CREATE TABLE IF NOT EXISTS paciente (" +
+                    "id INT AUTO_INCREMENT PRIMARY KEY, " +
+                    "nome VARCHAR(255) NOT NULL, " +
+                    "cpf VARCHAR(255) NOT NULL UNIQUE, " +
+                    "ativo BOOLEAN NOT NULL" +
+                    ")";
+
             try {
 
                 connection = DB.getConnection();
@@ -28,7 +35,7 @@ public class Main {
 
 
                 resultSet = statement.executeQuery(createProfessionalTable);
-
+                resultSet = statement.executeQuery(createPacienteTable);
 
             }catch (SQLException e){
                 e.printStackTrace();
